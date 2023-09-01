@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
     // final data = await supabase.from('my_table').select('column_2').execute();
     final data = await Supabase.instance.client.from('api-keys').select('openai');
 
+    print('Just before data');
     print(data);
   }
 
